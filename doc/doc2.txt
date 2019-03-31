@@ -1,0 +1,39 @@
+// 单行注释
+
+/* 
+多行注释
+*/
+
+package main  // package 必须在代码首行
+
+import "fmt"  // 导入包
+import (      // 导入多个包
+    "fmt"
+    "strings"
+)
+
+const PI = 3.14 // 常量定义
+
+var name = "ZhangShuai" // 变量 全局
+
+type YourType int   // 类型别名
+
+// 结构的声明
+type Your_struct struct{
+
+}
+
+// 接口声明
+type Your_interface interface
+
+}
+
+// main函数作为程序的入口启动, func 定义函数
+func main(){
+
+}
+
+
+Go语言使用大小写来决定是否能够被外部调用，大写可以，小写不可以
+
+

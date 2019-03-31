@@ -13,5 +13,4 @@ func main(){
     // { 不能在单独的行上
     fmt.Println("Hello, Go!")
     test_var()
-
 }
