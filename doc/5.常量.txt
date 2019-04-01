@@ -1,0 +1,23 @@
+定义常量:
+const ci int = 10
+const cs string = "cs"
+
+常量组：
+const (
+    RED = 1+1
+    BLACK   // 会沿用前一行的表达式，所以BLACK==2
+)
+
+关键字：iota
+const (
+	RED int = iota	// RED==0 从0开始，常量计数器(记录常量的个数)
+	BLACK           // BLACK==1, 因为沿用上一行的表达式，所以BLACK=iota ==2
+)
+
+const (
+    B float64 = 1 << (iota*10)  // 1<<0
+    KB  // 1<<10
+    MB  // 1<<20
+    GB  // 1<<30
+)
+
