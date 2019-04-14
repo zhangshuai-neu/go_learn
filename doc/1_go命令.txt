@@ -1,0 +1,13 @@
+1. 命令
+
+go get 获取远程包
+go run 直接运行程序
+go build 测试编译，检查是否有错误
+    只能编译 package为main的文件
+go fmt  格式化源码包
+go install 编译包文件，并编译整个程序
+go test 运行测试文件
+go doc 查看手册
+
+在本地建立包的说明，之后可以在浏览器进行查看 localhost:8080
+godoc -http=:8080
