@@ -11,7 +11,7 @@ const (
 关键字：iota
 const (
 	RED int = iota	// RED==0 从0开始，常量计数器(记录常量的个数)
-	BLACK           // BLACK==1, 因为沿用上一行的表达式，所以BLACK=iota ==2
+	BLACK           // BLACK==1, 因为沿用上一行的表达式，所以"BLACK" => BLACK int = iota
 )
 
 const (

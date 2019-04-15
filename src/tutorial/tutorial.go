@@ -8,6 +8,10 @@ import (
     "tutorial/varUse"
     "tutorial/constUse"
     "tutorial/ptr"
+    "tutorial/ifExpression"
+    "tutorial/forExpression"
+    "tutorial/switchExpression"
+    "tutorial/jumpLabel"
 )
 
 func main(){  // { 不能在单独的行上
@@ -26,4 +30,15 @@ func main(){  // { 不能在单独的行上
     fmt.Println("===== 4. 测试++,--和指针 =====")
     ptr.TestPtr()
 
+    fmt.Println("===== 5. 测试条件表达式 =====")
+    ifExpression.TestIfExpression()
+
+    fmt.Println("===== 6. 测试循环表达式 =====")
+    forExpression.TestForExpression()
+
+    fmt.Println("===== 7. 测试switch表达式 =====")
+    switchExpression.TestSwitchExpression()
+
+    fmt.Println("===== 8. 跳转测试 =====")
+    jumpLabel.TestJumpLabel()
 }
