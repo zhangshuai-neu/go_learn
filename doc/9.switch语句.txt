@@ -1,0 +1,13 @@
+switch 语句：
+
+switch expression {
+    case condition1:
+        ...
+    case condition2:
+        ...
+    default:
+        ...
+}
+
+condition为true的的case得到执行
+case 自带break效果，不需要添加break语句
