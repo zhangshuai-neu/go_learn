@@ -12,6 +12,7 @@ import (
     "tutorial/forExpression"
     "tutorial/switchExpression"
     "tutorial/jumpLabel"
+    "tutorial/array"
 )
 
 func main(){  // { 不能在单独的行上
@@ -41,4 +42,7 @@ func main(){  // { 不能在单独的行上
 
     fmt.Println("===== 8. 跳转测试 =====")
     jumpLabel.TestJumpLabel()
+
+    fmt.Println("===== 9. 数组测试 =====")
+    array.TestArray()
 }
