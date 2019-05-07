@@ -4,61 +4,64 @@ import "fmt"
 
 // my package
 import (
-    "tutorial/typeZeroVal"  //1. 测试类型零值
-    "tutorial/varUse"
-    "tutorial/constUse"
-    "tutorial/ptr"
-    "tutorial/ifExpression"
-    "tutorial/forExpression"
-    "tutorial/switchExpression"
-    "tutorial/jumpLabel"
-    "tutorial/array"
-    "tutorial/testSlice"
-    "tutorial/testChannel"
-    "tutorial/testGoroutine"
-    "tutorial/testStruct"
+	"tutorial/array"
+	"tutorial/constUse"
+	"tutorial/forExpression"
+	"tutorial/ifExpression"
+	"tutorial/jumpLabel"
+	"tutorial/ptr"
+	"tutorial/switchExpression"
+	"tutorial/testChannel"
+	"tutorial/testGoroutine"
+	"tutorial/testSlice"
+	"tutorial/testStruct"
+	"tutorial/typeZeroVal" //1. 测试类型零值
+	"tutorial/varUse"
+	"tutorial/testFunc"
 )
 
-func main(){  // { 不能在单独的行上
-    fmt.Println("Hello, Go!")
-    
-    fmt.Println("===== 1. 测试类型零值 =====")
-    typeZeroVal.TestTypeZeroVal()
+func main() { // { 不能在单独的行上
+	fmt.Println("Hello, Go!")
 
+	fmt.Println("===== 1. 测试类型零值 =====")
+	typeZeroVal.TestTypeZeroVal()
 
-    fmt.Println("===== 2. 测试变量定义 =====")
-    varUse.TestVarUse()
+	fmt.Println("===== 2. 测试变量定义 =====")
+	varUse.TestVarUse()
 
-    fmt.Println("===== 3. 测试常量使用 =====")
-    constUse.TestConstUse()
+	fmt.Println("===== 3. 测试常量使用 =====")
+	constUse.TestConstUse()
 
-    fmt.Println("===== 4. 测试++,--和指针 =====")
-    ptr.TestPtr()
+	fmt.Println("===== 4. 测试++,--和指针 =====")
+	ptr.TestPtr()
 
-    fmt.Println("===== 5. 测试条件表达式 =====")
-    ifExpression.TestIfExpression()
+	fmt.Println("===== 5. 测试条件表达式 =====")
+	ifExpression.TestIfExpression()
 
-    fmt.Println("===== 6. 测试循环表达式 =====")
-    forExpression.TestForExpression()
+	fmt.Println("===== 6. 测试循环表达式 =====")
+	forExpression.TestForExpression()
 
-    fmt.Println("===== 7. 测试switch表达式 =====")
-    switchExpression.TestSwitchExpression()
+	fmt.Println("===== 7. 测试switch表达式 =====")
+	switchExpression.TestSwitchExpression()
 
-    fmt.Println("===== 8. 跳转测试 =====")
-    jumpLabel.TestJumpLabel()
+	fmt.Println("===== 8. 跳转测试 =====")
+	jumpLabel.TestJumpLabel()
 
-    fmt.Println("===== 9. 数组测试 =====")
-    array.TestArray()
+	fmt.Println("===== 9. 数组测试 =====")
+	array.TestArray()
 
-    fmt.Println("===== 10. slice测试 =====")
-    testSlice.TestSlice()
+	fmt.Println("===== 10. slice测试 =====")
+	testSlice.TestSlice()
 
-    fmt.Println("===== 11. channel测试 =====")
-    testChannel.TestChannel()
+	fmt.Println("===== 11. channel测试 =====")
+	testChannel.TestChannel()
 
-    fmt.Println("===== 12. goroutine测试 =====")
-    testGoroutine.TestGorourine()
+	fmt.Println("===== 12. goroutine测试 =====")
+	testGoroutine.TestGorourine()
 
-    fmt.Println("===== 13. struct测试 =====")
-    testStruct.TestStruct()
+	fmt.Println("===== 13. struct测试 =====")
+	testStruct.TestStruct()
+
+	fmt.Println("===== 14. 左值函数测试 =====")
+	testFunc.TestFunc()
 }

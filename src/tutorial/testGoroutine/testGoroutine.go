@@ -23,13 +23,12 @@ func alphabets() {
 	}
 }
 
-func TestGorourine(){
+func TestGorourine() {
 	go hello()
 	go numbers()
 	go alphabets()
 	// 等待hello执行完
-	time.Sleep(3*time.Second)
+	time.Sleep(3 * time.Second)
 	fmt.Println("TestGoroutine End")
-
 
 }

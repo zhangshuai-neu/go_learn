@@ -6,14 +6,14 @@ import (
 )
 
 // 2. channel 测试阻塞 ======================
-func testBlock(intChan chan int){
+func testBlock(intChan chan int) {
 	go func() {
-	intChan <- 1
+		intChan <- 1
 	}()
 
 	num := <-intChan // 会阻塞，直到上面的协程完成
 
-	fmt.Println("num from channel: ",num)
+	fmt.Println("num from channel: ", num)
 }
 
 // 3. 传输结构数据 ===========================
@@ -28,7 +28,7 @@ type Person struct {
 	Address Addr
 }
 
-func testStructChannel(){
+func testStructChannel() {
 	personChan := make(chan Person, 1)
 
 	person := Person{"xiaoming", 10, Addr{"shenzhen", "longgang"}}
@@ -42,7 +42,7 @@ func testStructChannel(){
 }
 
 // 4. 测试关闭channel
-func testCloseChannel(){
+func testCloseChannel() {
 	ch := make(chan int, 5)
 	sign := make(chan int, 2)
 
@@ -116,8 +116,8 @@ func testMergeInput() {
 
 // 6. 测试channel用于通知中断退出的问题
 func testQuit() {
-	g := make(chan int)	// 发送的消息
-	quit := make(chan bool)	// 关闭通知
+	g := make(chan int)     // 发送的消息
+	quit := make(chan bool) // 关闭通知
 
 	go func() {
 		for {
@@ -176,7 +176,7 @@ func testPCB() {
 }
 
 // 对外 ======================================
-func TestChannel(){
+func TestChannel() {
 	// 1. 使用make创建channel
 	var intChan chan int = make(chan int)
 
@@ -203,6 +203,5 @@ func TestChannel(){
 	// 7. 生产者和消费者
 	fmt.Println("测试 生产者和消费者:")
 	testPCB()
-
 
 }
