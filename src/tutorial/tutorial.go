@@ -13,6 +13,10 @@ import (
     "tutorial/switchExpression"
     "tutorial/jumpLabel"
     "tutorial/array"
+    "tutorial/testSlice"
+    "tutorial/testChannel"
+    "tutorial/testGoroutine"
+    "tutorial/testStruct"
 )
 
 func main(){  // { 不能在单独的行上
@@ -45,4 +49,16 @@ func main(){  // { 不能在单独的行上
 
     fmt.Println("===== 9. 数组测试 =====")
     array.TestArray()
+
+    fmt.Println("===== 10. slice测试 =====")
+    testSlice.TestSlice()
+
+    fmt.Println("===== 11. channel测试 =====")
+    testChannel.TestChannel()
+
+    fmt.Println("===== 12. goroutine测试 =====")
+    testGoroutine.TestGorourine()
+
+    fmt.Println("===== 13. struct测试 =====")
+    testStruct.TestStruct()
 }
