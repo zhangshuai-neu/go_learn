@@ -1,28 +1,12 @@
 package main
 
-import "fmt"
-
-// my package
-import (
-	"tutorial/array"
-	"tutorial/constUse"
-	"tutorial/forExpression"
-	"tutorial/ifExpression"
-	"tutorial/jumpLabel"
-	"tutorial/ptr"
-	"tutorial/switchExpression"
-	"tutorial/testChannel"
-	"tutorial/testGoroutine"
-	"tutorial/testSlice"
-	"tutorial/testStruct"
-	"tutorial/typeZeroVal" //1. 测试类型零值
-	"tutorial/varUse"
-	"tutorial/testFunc"
+import ("fmt"
+	"tutorial/testJson"
 )
 
 func main() { // { 不能在单独的行上
 	fmt.Println("Hello, Go!")
-
+/*
 	fmt.Println("===== 1. 测试类型零值 =====")
 	typeZeroVal.TestTypeZeroVal()
 
@@ -64,4 +48,14 @@ func main() { // { 不能在单独的行上
 
 	fmt.Println("===== 14. 左值函数测试 =====")
 	testFunc.TestFunc()
+
+	fmt.Println("====== 15. 测试string =====")
+	testString.TestString()
+
+	fmt.Println("====== 16. 测试time =====")
+	testTime.TestTime()
+	*/
+
+	fmt.Println("====== 17. 测试json=====")
+	testJson.TestJson()
 }
