@@ -5,4 +5,4 @@ if ! [ -e ./src/github.com ];then
 fi
 cd ./src/github.com;
 
-git clone https://github.com/rogpeppe/godef.git;
+git submodule add https://github.com/rogpeppe/godef.git src/github.com/godef
