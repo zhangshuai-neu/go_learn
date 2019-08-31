@@ -14,3 +14,16 @@ $GOPATH 下有3个目录 ,src, pkg, bin
 在bin目录下生成相应的可执行文件。
 
 如果package main不存在的文件，将只会在pkg目录下生成中间文件。
+
+#### 开始
+    
+执行下列命令，编译基础的golang的工具，主要是vscode自己下载总是失败 :(
+
+    sudo apt-get install golang
+    配置GOPATH环境变量
+    git config --global http.postBuffer 2000000000
+    git submodule init
+    git submodule update
+    chmod +x tools_install.sh
+    ./tools_install.sh
+
