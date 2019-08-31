@@ -2,10 +2,11 @@
 
 #! /bin/bash
 
-if ! [ -e ./src/github.com ];then
-	mkdir ./src/github.com;
-fi
-cd ./src/github.com;
+# 添加子目录
+# if ! [ -e ./src/github.com ];then
+# 	mkdir ./src/github.com;
+# fi
+# cd ./src/github.com;
 
 # git submodule add https://github.com/rogpeppe/godef.git src/github.com/rogpeppe/godef
 # git submodule add https://github.com/ramya-rao-a/go-outline.git src/github.com/ramya-rao-a/go-outline
