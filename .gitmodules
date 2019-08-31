@@ -1,3 +1,18 @@
 [submodule "src/github.com/godef"]
 	path = src/github.com/godef
 	url = https://github.com/rogpeppe/godef.git
+[submodule "src/golang/x/tools"]
+	path = src/golang/x/tools
+	url = https://github.com/golang/tools.git
+[submodule "src/github.com/sqs/goreturns"]
+	path = src/github.com/sqs/goreturns
+	url = https://github.com/sqs/goreturns
+[submodule "src/github.com/rogpeppe/godef"]
+	path = src/github.com/rogpeppe/godef
+	url = https://github.com/rogpeppe/godef.git
+[submodule "src/github.com/nsf/gocode"]
+	path = src/github.com/nsf/gocode
+	url = https://github.com/nsf/gocode
+[submodule "src/github.com/ramya-rao-a/go-outline"]
+	path = src/github.com/ramya-rao-a/go-outline
+	url = https://github.com/ramya-rao-a/go-outline.git
