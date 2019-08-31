@@ -1,6 +1,6 @@
 #! /bin/bash
 
-if [ !(-e ./src/github.com) ]
+if ! [ -e ./src/github.com ]
     mkdir ./src/github.com
 cd ./src/github.com
 
