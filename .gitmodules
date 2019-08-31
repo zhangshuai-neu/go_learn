@@ -1,0 +1,3 @@
+[submodule "src/github.com/godef"]
+	path = src/github.com/godef
+	url = https://github.com/rogpeppe/godef.git
