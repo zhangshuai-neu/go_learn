@@ -1,7 +1,8 @@
 #! /bin/bash
 
-if ! [ -e ./src/github.com ]
-    mkdir ./src/github.com
-cd ./src/github.com
+if ! [ -e ./src/github.com ];then
+	mkdir ./src/github.com;
+fi
+cd ./src/github.com;
 
-git clone https://github.com/rogpeppe/godef.git
+git clone https://github.com/rogpeppe/godef.git;
