@@ -13,3 +13,16 @@
 [submodule "src/golang.org/x/tools"]
 	path = src/golang.org/x/tools
 	url = https://github.com/golang/tools.git
+
+[submodule "src/github.com/kisielk/errcheck"]
+	path = src/github.com/kisielk/errcheck
+	url = https://github.com/kisielk/errcheck.git
+[submodule "src/golang.org/x/net"]
+	path = src/golang.org/x/net
+	url = https://github.com/golang/net.git
+[submodule "src/golang.org/x/xerrors"]
+	path = src/golang.org/x/xerrors
+	url = https://github.com/golang/xerrors.git
+[submodule "src/golang.org/x/sync"]
+	path = src/golang.org/x/sync
+	url = https://github.com/golang/sync.git
