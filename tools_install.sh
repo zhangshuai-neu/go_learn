@@ -17,6 +17,7 @@
 # git submodule add https://github.com/golang/net.git src/golang.org/x/net
 # git submodule add https://github.com/golang/xerrors.git src/golang.org/x/xerrors
 # git submodule add https://github.com/golang/sync.git src/golang.org/x/sync
+# git submodule add https://github.com/jstemmer/gotags.git src/github.com/jstemmer/gotags
 
 
 
@@ -25,6 +26,7 @@ go install github.com/ramya-rao-a/go-outline
 go install github.com/nsf/gocode
 go install github.com/sqs/goreturns
 go install github.com/kisielk/errcheck
+go install github.com/jstemmer/gotags
 
 go install golang.org/x/tools/cmd/goimports
 go install golang.org/x/tools/cmd/godoc

@@ -26,3 +26,6 @@
 [submodule "src/golang.org/x/sync"]
 	path = src/golang.org/x/sync
 	url = https://github.com/golang/sync.git
+[submodule "src/github.com/jstemmer/gotags"]
+	path = src/github.com/jstemmer/gotags
+	url = https://github.com/jstemmer/gotags.git
