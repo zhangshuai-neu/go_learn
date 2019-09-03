@@ -1,8 +1,17 @@
 # 学习go进行开发
 
+#### 目录说明
+
+src/tutotial go的基础语法
+
+src/mydocker 手敲从《自己动手写docker》看到的代码，需要修改才能在新linux内核上运行（他们的代码只支持3.13的内核）
+命名空间有不兼容的跟新 :(
+
+src/github.com 和 src/golang.org 就是一些手动安装的工具包
+
 #### Go语言开发环境
 
-开发环境使用的linux，随便搞个发行版吧 : )
+开发环境使用的linuxmint 19， 内核是4.15 : )
 
 先安装golang的开发包，然后加压即可，会出现 **go** 目录
 
