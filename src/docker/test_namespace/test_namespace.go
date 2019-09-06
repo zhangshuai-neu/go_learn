@@ -16,25 +16,8 @@ func main() {
 	attr.Cloneflags |= syscall.CLONE_NEWPID
 	attr.Cloneflags |= syscall.CLONE_NEWNS
 	attr.Cloneflags |= syscall.CLONE_NEWUSER
+	attr.Cloneflags |= syscall.CLONE_NEWNET
 	cmd.SysProcAttr = &attr
-
-	// 配置用户命名空间
-	uidMap := syscall.SysProcIDMap{}
-	uidMap.ContainerID = 1994
-	uidMap.HostID = 0
-	uidMap.Size = 1
-	uidMapSlice := []syscall.SysProcIDMap{}
-	uidMapSlice = append(uidMapSlice, uidMap)
-
-	gidMap := syscall.SysProcIDMap{}
-	gidMap.ContainerID = 1994
-	gidMap.HostID = 0
-	gidMap.Size = 1
-	gidMapSlice := []syscall.SysProcIDMap{}
-	gidMapSlice = append(uidMapSlice, gidMap)
-
-	cmd.SysProcAttr.UidMappings = uidMapSlice
-	cmd.SysProcAttr.GidMappings = gidMapSlice
 
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout

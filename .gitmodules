@@ -29,3 +29,9 @@
 [submodule "src/github.com/jstemmer/gotags"]
 	path = src/github.com/jstemmer/gotags
 	url = https://github.com/jstemmer/gotags.git
+[submodule "src/github.com/xianlubird/mydocker"]
+	path = src/github.com/xianlubird/mydocker
+	url = https://github.com/xianlubird/mydocker.git
+[submodule "src/github.com/go-delve/delve"]
+	path = src/github.com/go-delve/delve
+	url = https://github.com/go-delve/delve.git

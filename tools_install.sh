@@ -18,8 +18,8 @@
 # git submodule add https://github.com/golang/xerrors.git src/golang.org/x/xerrors
 # git submodule add https://github.com/golang/sync.git src/golang.org/x/sync
 # git submodule add https://github.com/jstemmer/gotags.git src/github.com/jstemmer/gotags
-
-
+# git submodule add  https://github.com/xianlubird/mydocker.git src/github.com/xianlubird/mydocker
+# git submodule add https://github.com/go-delve/delve.git src/github.com/go-delve/delve
 
 go install github.com/rogpeppe/godef
 go install github.com/ramya-rao-a/go-outline
@@ -33,3 +33,6 @@ go install golang.org/x/tools/cmd/godoc
 go install golang.org/x/tools/cmd/gopls
 go install golang.org/x/tools/cmd/gorename
 go install golang.org/x/tools/cmd/gotype
+
+cd $GOPATH/src/github.com/go-delve/delve
+make install

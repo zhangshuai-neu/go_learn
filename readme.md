@@ -93,3 +93,14 @@ YouCompleteMe的包比较大，可以使用命令 du -h .vim/bundle |tail -1 ，
     # 失败的话执行下  sudo apt-get update --fix-missing
     cd ~/.vim/bundle/YouCompleteMe
     ./install.sh
+
+
+#### 其他依赖
+	
+	sudo apt-get install cgroup-tools
+
+
+#### 一些参考
+
+ 	man cgroup_namespaces
+	man user_namespaces
