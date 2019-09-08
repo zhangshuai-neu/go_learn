@@ -95,10 +95,11 @@ YouCompleteMe的包比较大，可以使用命令 du -h .vim/bundle |tail -1 ，
     ./install.sh
 
 
-#### 其他依赖
+#### 其他内容
 	
 	sudo apt-get install cgroup-tools
-
+	# 安装docker
+	参考 https://docs.docker.com/install/linux/docker-ce/binaries/
 
 #### 一些参考
 
